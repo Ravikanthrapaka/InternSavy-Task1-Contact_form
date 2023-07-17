@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="index.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("YBg3IPIuHP4bR8-JP");
+      })();
+    </script>
+
+     </head>
+  <body>
+    <div class="container">
+      <div class="button">
+<div class="h1">
+  
+          <h1>Contact form</h1>
+          
+          <!-- <div class="form-group"> -->
+            <h5 for="name">Name </h5>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Enter name"
+            />
+          <!-- </div> -->
+          <!-- <div class="form-group"> -->
+            <h5 for="email">Email</h5>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Enter email"
+            />
+
+            <h5 for="mobile">Mobile</h5>
+            <input
+              type="mobile"
+              class="form-control"
+              id="mobile"
+              placeholder="Enter mobile"
+            />
+          <!-- </div>
+          <div class="form-group"> -->
+            <h5 for="message">Message</h5>
+            <h4 style="background-color:rgba(11, 13, 14, 0.918);">
+            <textarea class="form-control" id="message" placeholder="Enter Message Here." rows="3"></textarea></h4>
+          <!-- </div> -->
+       <div class="button-hover">
+          <button class="button" onclick="sendMail()">Submit</button>
+        </form>
+        <!-- </div>
+      
+  
+  </body>
+</html>
